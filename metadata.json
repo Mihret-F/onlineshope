@@ -1,0 +1,6 @@
+{
+  "name": "Mercy Shopes",
+  "description": "E-Commerce website, product catalog, and inquiry management platform for Mercy Shopes",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,706 @@
+{
+  "adminUsers": [
+    {
+      "id": "admin-01",
+      "name": "Mercy Shopes Admin",
+      "email": "admin@mercyshopes.com",
+      "role": "superadmin",
+      "createdAt": "2026-08-13T08:56:08.514Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-materials",
+      "name": "Materials",
+      "description": "High-grade construction materials, building supplies, hardware, and industrial goods.",
+      "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&auto=format&fit=crop&q=80",
+      "status": "active",
+      "createdAt": "2026-08-13T08:56:08.513Z"
+    },
+    {
+      "id": "cat-cosmetics",
+      "name": "Cosmetics",
+      "description": "Premium skincare, hair care, makeup, personal care, and beauty treatments.",
+      "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80",
+      "status": "active",
+      "createdAt": "2026-08-13T08:56:08.514Z"
+    },
+    {
+      "id": "cat-other",
+      "name": "Other Products",
+      "description": "Essential household products, accessories, and general merchandise.",
+      "image": "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600&auto=format&fit=crop&q=80",
+      "status": "active",
+      "createdAt": "2026-08-13T08:56:08.514Z"
+    },
+    {
+      "id": "cat-jewelry",
+      "name": "Jewelry",
+      "description": "Elegant Ethiopian Habesha gold jewelry, necklaces, bangles, rings, and fine accessories.",
+      "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&auto=format&fit=crop&q=80",
+      "status": "active",
+      "createdAt": "2026-08-13T10:18:26.959Z"
+    },
+    {
+      "id": "cat-clothes",
+      "name": "Clothes",
+      "description": "Traditional Ethiopian Habesha Kemis, modern dresses, jackets, suits, and fashion apparel.",
+      "image": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=600&auto=format&fit=crop&q=80",
+      "status": "active",
+      "createdAt": "2026-08-13T10:18:26.959Z"
+    },
+    {
+      "id": "cat-shoes",
+      "name": "Shoes",
+      "description": "Genuine handcrafted leather loafers, heels, sneakers, and quality footwear.",
+      "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600&auto=format&fit=crop&q=80",
+      "status": "active",
+      "createdAt": "2026-08-13T10:18:26.959Z"
+    }
+  ],
+  "products": [
+    {
+      "name": "cosmoo",
+      "sku": "MS-PRD-465",
+      "categoryId": "cat-other",
+      "brand": "nercyyy",
+      "shortDescription": "hi all",
+      "description": "",
+      "price": 1000,
+      "discountPrice": 1,
+      "stock": 20,
+      "availability": "Available",
+      "featured": false,
+      "isNew": true,
+      "badge": "",
+      "images": [
+        "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop&q=80"
+      ],
+      "specifications": {},
+      "sizes": [],
+      "colors": [],
+      "tags": [],
+      "id": "prod-1786611916941",
+      "categoryName": "Other Products",
+      "createdAt": "2026-08-13T09:05:16.941Z",
+      "updatedAt": "2026-08-13T09:05:16.941Z"
+    },
+    {
+      "id": "prod-001",
+      "name": "Hydrating Botanical Facial Serum 50ml",
+      "sku": "MS-COS-001",
+      "categoryId": "cat-cosmetics",
+      "categoryName": "Cosmetics",
+      "brand": "Mercy Glow",
+      "shortDescription": "Rich nourishing facial serum for glowing and healthy skin.",
+      "description": "Formulated with botanical extracts and hyaluronic acid to lock in moisture, reduce fine lines, and give your complexion a smooth, radiant finish suitable for everyday skincare routines.",
+      "price": 1500,
+      "discountPrice": 1350,
+      "stock": 45,
+      "availability": "Available",
+      "featured": true,
+      "isNew": true,
+      "badge": "Best Seller",
+      "images": [
+        "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1608248597309-873d9e03d09a?w=800&auto=format&fit=crop&q=80"
+      ],
+      "specifications": {
+        "Volume": "50ml",
+        "Skin Type": "All Skin Types",
+        "Key Ingredients": "Hyaluronic Acid, Vitamin C, Rosehip Oil",
+        "Origin": "Imported"
+      },
+      "sizes": [
+        "50ml",
+        "100ml"
+      ],
+      "colors": [
+        "Clear"
+      ],
+      "tags": [
+        "Skincare",
+        "Serum",
+        "Glow",
+        "Beauty"
+      ],
+      "createdAt": "2026-08-13T08:56:08.514Z",
+      "updatedAt": "2026-08-13T08:56:08.514Z"
+    },
+    {
+      "id": "prod-002",
+      "name": "Nourishing Argan Hair Therapy Oil 100ml",
+      "sku": "MS-COS-002",
+      "categoryId": "cat-cosmetics",
+      "categoryName": "Cosmetics",
+      "brand": "Mercy Care",
+      "shortDescription": "Deep conditioning hair treatment oil for shine and strength.",
+      "description": "Restores split ends, protects hair against moisture loss, and adds brilliant luster to natural and color-treated hair without greasy residue.",
+      "price": 980,
+      "stock": 30,
+      "availability": "Available",
+      "featured": true,
+      "isNew": false,
+      "badge": "Popular",
+      "images": [
+        "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=800&auto=format&fit=crop&q=80"
+      ],
+      "specifications": {
+        "Volume": "100ml",
+        "Hair Type": "Dry, Damaged, Curly, Straight",
+        "Formulation": "Organic Argan & Coconut Blend"
+      },
+      "sizes": [
+        "100ml"
+      ],
+      "tags": [
+        "Haircare",
+        "Argan Oil",
+        "Cosmetics"
+      ],
+      "createdAt": "2026-08-13T08:56:08.514Z",
+      "updatedAt": "2026-08-13T08:56:08.514Z"
+    },
+    {
+      "id": "prod-003",
+      "name": "Velvet Matte Long-Wear Lipstick Set",
+      "sku": "MS-COS-003",
+      "categoryId": "cat-cosmetics",
+      "categoryName": "Cosmetics",
+      "brand": "Mercy Glam",
+      "shortDescription": "High-pigment matte lipstick collection in trending shades.",
+      "description": "Smudge-proof, transfer-resistant matte lipstick formula with a lightweight feel that lasts up to 12 hours.",
+      "price": 850,
+      "discountPrice": 750,
+      "stock": 60,
+      "availability": "Available",
+      "featured": false,
+      "isNew": true,
+      "badge": "New Arrival",
+      "images": [
+        "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=800&auto=format&fit=crop&q=80"
+      ],
+      "specifications": {
+        "Shades Included": "Ruby Red, Nude Rose, Plum Dusk",
+        "Finish": "Velvet Matte",
+        "Wear Time": "Up to 12 Hours"
+      },
+      "colors": [
+        "Ruby Red",
+        "Nude Rose",
+        "Plum Dusk"
+      ],
+      "tags": [
+        "Makeup",
+        "Lipstick",
+        "Cosmetics"
+      ],
+      "createdAt": "2026-08-13T08:56:08.514Z",
+      "updatedAt": "2026-08-13T08:56:08.514Z"
+    },
+    {
+      "id": "prod-004",
+      "name": "Premium Polished Porcelain Floor Tiles (60x60 cm)",
+      "sku": "MS-MAT-001",
+      "categoryId": "cat-materials",
+      "categoryName": "Materials",
+      "brand": "Mercy Build",
+      "shortDescription": "Durable, high-gloss glazed porcelain tiles for interior floors.",
+      "description": "High-grade stain-resistant porcelain tiles perfect for residential living rooms, commercial spaces, and decorative interior flooring projects.",
+      "price": 2400,
+      "stock": 500,
+      "availability": "Available",
+      "featured": true,
+      "isNew": false,
+      "badge": "Top Choice",
+      "images": [
+        "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1615873968403-89e068629265?w=800&auto=format&fit=crop&q=80"
+      ],
+      "specifications": {
+        "Dimensions": "60 cm x 60 cm x 10 mm",
+        "Coverage": "1.44 sq meters per box (4 pcs)",
+        "Finish": "High Gloss Polished Marble Effect",
+        "Grade": "Class A First Choice"
+      },
+      "sizes": [
+        "60x60 cm",
+        "80x80 cm"
+      ],
+      "colors": [
+        "Carrara White",
+        "Beige Marble"
+      ],
+      "tags": [
+        "Building Supplies",
+        "Tiles",
+        "Construction",
+        "Materials"
+      ],
+      "createdAt": "2026-08-13T08:56:08.514Z",
+      "updatedAt": "2026-08-13T08:56:08.514Z"
+    },
+    {
+      "id": "prod-005",
+      "name": "Heavy-Duty Waterproof Elastomeric Sealant (20kg)",
+      "sku": "MS-MAT-002",
+      "categoryId": "cat-materials",
+      "categoryName": "Materials",
+      "brand": "Mercy Seal",
+      "shortDescription": "Industrial-grade waterproofing coating for roofs and concrete.",
+      "description": "High-flexibility liquid membrane that cures into a seamless, rubberized barrier against water ingress, cracks, and harsh weathering conditions.",
+      "price": 3800,
+      "discountPrice": 3500,
+      "stock": 25,
+      "availability": "Available",
+      "featured": false,
+      "isNew": true,
+      "badge": "Industrial Grade",
+      "images": [
+        "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&auto=format&fit=crop&q=80"
+      ],
+      "specifications": {
+        "Weight": "20 kg Pail",
+        "Coverage": "Approx 20-25 m² (2 coats)",
+        "Application": "Brush, Roller, Spray",
+        "Drying Time": "4-6 Hours"
+      },
+      "colors": [
+        "Grey",
+        "White"
+      ],
+      "tags": [
+        "Waterproofing",
+        "Construction Materials",
+        "Industrial"
+      ],
+      "createdAt": "2026-08-13T08:56:08.514Z",
+      "updatedAt": "2026-08-13T08:56:08.514Z"
+    },
+    {
+      "id": "prod-006",
+      "name": "Solid Brass Plumbing Valve & Fitting Set",
+      "sku": "MS-MAT-003",
+      "categoryId": "cat-materials",
+      "categoryName": "Materials",
+      "brand": "Mercy Hardware",
+      "shortDescription": "Corrosion-resistant brass ball valves and pipe connectors.",
+      "description": "Precision-engineered lead-free brass valves and plumbing adapters suitable for residential and commercial water distribution lines.",
+      "price": 1200,
+      "stock": 120,
+      "availability": "Available",
+      "featured": false,
+      "isNew": false,
+      "images": [
+        "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&auto=format&fit=crop&q=80"
+      ],
+      "specifications": {
+        "Thread Size": "1/2 Inch, 3/4 Inch",
+        "Pressure Rating": "PN25",
+        "Material": "Solid Brass"
+      },
+      "sizes": [
+        "1/2\"",
+        "3/4\"",
+        "1\""
+      ],
+      "tags": [
+        "Plumbing",
+        "Hardware",
+        "Building Supplies"
+      ],
+      "createdAt": "2026-08-13T08:56:08.514Z",
+      "updatedAt": "2026-08-13T08:56:08.514Z"
+    },
+    {
+      "id": "prod-007",
+      "name": "Multi-Purpose Eco-Friendly Household Cleanser 5L",
+      "sku": "MS-OTH-001",
+      "categoryId": "cat-other",
+      "categoryName": "Other Products",
+      "brand": "Mercy Clean",
+      "shortDescription": "Concentrated non-toxic multi-surface liquid cleaner.",
+      "description": "Gentle on hands yet tough on grease and stains. Formulated for countertops, glass, tile floors, and general home and shop sanitization.",
+      "price": 450,
+      "stock": 80,
+      "availability": "Available",
+      "featured": false,
+      "isNew": false,
+      "images": [
+        "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=800&auto=format&fit=crop&q=80"
+      ],
+      "specifications": {
+        "Volume": "5 Liters",
+        "Scent": "Fresh Citrus",
+        "Formula": "Biodegradable"
+      },
+      "sizes": [
+        "1L",
+        "5L"
+      ],
+      "tags": [
+        "Household",
+        "Cleaning",
+        "General Merchandise"
+      ],
+      "createdAt": "2026-08-13T08:56:08.514Z",
+      "updatedAt": "2026-08-13T08:56:08.514Z"
+    },
+    {
+      "id": "prod-008",
+      "name": "Stainless Steel Modular Kitchen Shelf Organizer",
+      "sku": "MS-OTH-002",
+      "categoryId": "cat-other",
+      "categoryName": "Other Products",
+      "brand": "Mercy Home",
+      "shortDescription": "Rust-proof multi-tier countertop storage unit.",
+      "description": "Heavy-duty stainless steel organization rack with adjustable tier heights, cutlery holders, and non-slip rubber feet.",
+      "price": 1850,
+      "discountPrice": 1650,
+      "stock": 15,
+      "availability": "Available",
+      "featured": true,
+      "isNew": true,
+      "badge": "Home Essential",
+      "images": [
+        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&auto=format&fit=crop&q=80"
+      ],
+      "specifications": {
+        "Material": "304 Stainless Steel",
+        "Tiers": "3 Tiers",
+        "Dimensions": "45cm x 28cm x 60cm"
+      },
+      "colors": [
+        "Silver",
+        "Black Matte"
+      ],
+      "tags": [
+        "Household",
+        "Organizer",
+        "Kitchen"
+      ],
+      "createdAt": "2026-08-13T08:56:08.514Z",
+      "updatedAt": "2026-08-13T08:56:08.514Z"
+    },
+    {
+      "id": "prod-009",
+      "name": "Premium Polished Porcelain Floor Tiles (60x60 cm)",
+      "sku": "MS-MAT-001",
+      "categoryId": "cat-materials",
+      "categoryName": "Materials",
+      "brand": "Mercy Build",
+      "shortDescription": "Durable, high-gloss glazed porcelain tiles for interior floors.",
+      "description": "High-grade stain-resistant porcelain tiles perfect for residential living rooms, commercial spaces, and decorative interior flooring projects.",
+      "price": 2400,
+      "stock": 500,
+      "availability": "Available",
+      "featured": true,
+      "isNew": false,
+      "badge": "Top Choice",
+      "images": [
+        "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1615873968403-89e068629265?w=800&auto=format&fit=crop&q=80"
+      ],
+      "specifications": {
+        "Dimensions": "60 cm x 60 cm x 10 mm",
+        "Coverage": "1.44 sq meters per box (4 pcs)",
+        "Finish": "High Gloss Polished Marble Effect"
+      },
+      "sizes": [
+        "60x60 cm",
+        "80x80 cm"
+      ],
+      "colors": [
+        "Carrara White",
+        "Beige Marble"
+      ],
+      "tags": [
+        "Building Supplies",
+        "Tiles",
+        "Materials"
+      ],
+      "createdAt": "2026-08-13T10:18:26.959Z",
+      "updatedAt": "2026-08-13T10:18:26.959Z"
+    }
+  ],
+  "inquiries": [
+    {
+      "customerName": "tufyrj",
+      "phone": "+251 987876543",
+      "telegramUsername": "@mercyyy",
+      "email": "mihretfikre67@gmail.com",
+      "productId": "prod-001",
+      "productName": "Hydrating Botanical Facial Serum 50ml",
+      "productCategory": "Cosmetics",
+      "quantity": 1,
+      "location": "Addis Ababa",
+      "preferredContact": "Phone",
+      "message": "I would like to inquire about Hydrating Botanical Facial Serum 50ml. Please provide availability and quote.",
+      "additionalRequirements": "",
+      "attachment": "",
+      "id": "inq-1786616378695",
+      "inquiryNumber": "#MS-000003",
+      "status": "New",
+      "createdAt": "2026-08-13T10:19:38.695Z",
+      "updatedAt": "2026-08-13T10:19:38.695Z"
+    },
+    {
+      "customerName": "hgc",
+      "phone": "+251 987654322",
+      "telegramUsername": "nbhj",
+      "email": "mihretfikre67@gmail.com",
+      "productId": "prod-004",
+      "productName": "Premium Polished Porcelain Floor Tiles (60x60 cm)",
+      "productCategory": "Materials",
+      "quantity": 1,
+      "location": "Addis Ababa",
+      "preferredContact": "Email",
+      "message": "I would like to inquire about Premium Polished Porcelain Floor Tiles (60x60 cm). Please provide availability and quote.",
+      "additionalRequirements": "",
+      "attachment": "",
+      "id": "inq-1786611730620",
+      "inquiryNumber": "#MS-000002",
+      "status": "New",
+      "createdAt": "2026-08-13T09:02:10.620Z",
+      "updatedAt": "2026-08-13T09:02:10.620Z"
+    },
+    {
+      "customerName": "mihret",
+      "phone": "+251 965449976",
+      "telegramUsername": "@meryy",
+      "email": "mihretfikre67@gmail.com",
+      "productId": "prod-004",
+      "productName": "Premium Polished Porcelain Floor Tiles (60x60 cm)",
+      "productCategory": "Materials",
+      "quantity": 111,
+      "location": "Addis Ababa",
+      "preferredContact": "Telegram",
+      "message": "I would like to inquire about Premium Polished Porcelain Floor Tiles (60x60 cm). Please provide availability and quote.",
+      "additionalRequirements": "fnakej",
+      "attachment": "",
+      "id": "inq-1786611686513",
+      "inquiryNumber": "#MS-000001",
+      "status": "New",
+      "createdAt": "2026-08-13T09:01:26.513Z",
+      "updatedAt": "2026-08-13T09:01:26.513Z"
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust-1786611686513",
+      "fullName": "tufyrj",
+      "phone": "+251 965449976",
+      "telegramUsername": "@mercyyy",
+      "email": "mihretfikre67@gmail.com",
+      "location": "Addis Ababa",
+      "totalInquiries": 3,
+      "lastInquiryDate": "2026-08-13T10:19:38.695Z",
+      "createdAt": "2026-08-13T09:01:26.513Z"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "gal-01",
+      "title": "Cosmetics & Skincare Display",
+      "description": "High quality beauty products and skincare items in stock at Mercy Shopes.",
+      "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=80",
+      "category": "Products",
+      "status": "published",
+      "createdAt": "2026-08-13T08:56:08.514Z"
+    },
+    {
+      "id": "gal-02",
+      "title": "Building Materials & Hardware Inventory",
+      "description": "Supplies ready for pickup and dispatch at Maxico Shabele.",
+      "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80",
+      "category": "Store",
+      "status": "published",
+      "createdAt": "2026-08-13T08:56:08.514Z"
+    },
+    {
+      "id": "gal-03",
+      "title": "Premium Porcelain Floor Tiles Sourcing",
+      "description": "Inspecting tile finishes for customer order fulfillment.",
+      "image": "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=800&auto=format&fit=crop&q=80",
+      "category": "Products",
+      "status": "published",
+      "createdAt": "2026-08-13T08:56:08.514Z"
+    },
+    {
+      "id": "gal-04",
+      "title": "Household & Kitchen Goods Section",
+      "description": "Selected merchandise for modern home convenience.",
+      "image": "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=800&auto=format&fit=crop&q=80",
+      "category": "Behind the Scenes",
+      "status": "published",
+      "createdAt": "2026-08-13T08:56:08.514Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-01",
+      "title": "Commercial Building Flooring Supply",
+      "description": "Supplied 1,200 sq meters of premium polished porcelain floor tiles to a modern commercial center at Maxico Shabele.",
+      "location": "Maxico Shabele, Addis Ababa",
+      "date": "July 2026",
+      "category": "Supply Projects",
+      "images": [
+        "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=800&auto=format&fit=crop&q=80"
+      ],
+      "status": "Completed",
+      "createdAt": "2026-08-13T08:56:08.514Z"
+    },
+    {
+      "id": "proj-02",
+      "title": "Beauty Salon Retail Sourcing Package",
+      "description": "Provided wholesale cosmetics, skincare sets, and hair care products for a premiere beauty parlor.",
+      "location": "Addis Ababa",
+      "date": "August 2026",
+      "category": "Business Projects",
+      "images": [
+        "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=80"
+      ],
+      "status": "Completed",
+      "createdAt": "2026-08-13T08:56:08.514Z"
+    }
+  ],
+  "services": [
+    {
+      "id": "srv-01",
+      "title": "Product Supply",
+      "shortDescription": "Reliable supply of materials, cosmetics, and merchandise.",
+      "fullDescription": "Mercy Shopes supplies high-quality products and materials directly to individuals, homes, contractors, and retail shops with guaranteed authenticity.",
+      "iconName": "PackageCheck",
+      "features": [
+        "Sourced from trusted manufacturers",
+        "Quality check before delivery",
+        "Flexible order sizes"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "srv-02",
+      "title": "Bulk Orders",
+      "shortDescription": "Competitive pricing and dedicated handling for large quantities.",
+      "fullDescription": "Planning a large construction project or stocking your retail store? Send us your bulk product requirements for special wholesale rates.",
+      "iconName": "Boxes",
+      "features": [
+        "Discounted bulk pricing",
+        "Custom packing & staging",
+        "Scheduled batch dispatches"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "srv-03",
+      "title": "Product Inquiry",
+      "shortDescription": "Instant direct inquiries via website and Telegram notifications.",
+      "fullDescription": "Easily request specific product details, stock availability, customized sizing, or custom quotes with a single click.",
+      "iconName": "MessageSquareText",
+      "features": [
+        "Instant inquiry submission",
+        "Direct Telegram notification routing",
+        "Fast phone/WhatsApp follow-up"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "srv-04",
+      "title": "Business Supply",
+      "shortDescription": "B2B supply contracts for commercial enterprises and offices.",
+      "fullDescription": "Tailored product sourcing for businesses, beauty salons, maintenance companies, and institutions requiring recurring material supply.",
+      "iconName": "Building2",
+      "features": [
+        "Invoicing support",
+        "Dedicated account coordinator",
+        "Custom product sourcing"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "srv-05",
+      "title": "Customer Support",
+      "shortDescription": "Friendly guidance to help you choose the right product.",
+      "fullDescription": "Our experienced staff at Maxico Shabele offer expert recommendations on product usage, specifications, and compatibility.",
+      "iconName": "Headphones",
+      "features": [
+        "Expert product guidance",
+        "In-person & remote assistance",
+        "Transparent order tracking"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "srv-06",
+      "title": "Special Requests",
+      "shortDescription": "Sourcing specialized materials or cosmetics on request.",
+      "fullDescription": "Can’t find a specific building material, shade of cosmetic, or hard-to-find item? Let Mercy Shopes source it for you through our direct network.",
+      "iconName": "Sparkles",
+      "features": [
+        "Custom item lookup",
+        "Fast procurement cycle",
+        "Pre-order confirmation"
+      ],
+      "status": "active"
+    }
+  ],
+  "messages": [],
+  "siteSettings": {
+    "companyName": "Mercy Shopes",
+    "logo": "/logo.png",
+    "phone": "+251 965 449 976",
+    "email": "mihretfikre67@gmail.com",
+    "location": "Maxico Shabele",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.5489720485667!2d38.7491!3d9.0125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMDAnNDUuMCJOIDM4wrA0NCc1Ni44IkU!5e0!3m2!1sen!2set!4v1620000000000!5m2!1sen!2set",
+    "aboutStory": "Mercy Shopes is focused on making quality products and materials easier for customers to discover and request. The shop provides products across different categories, including materials, cosmetics, personal care, household products, and other selected merchandise.",
+    "mission": "To provide customers with quality products, convenient product discovery, responsive customer service, and a simple way to request products.",
+    "vision": "To become a trusted and customer-focused shop serving customers with quality products and reliable service.",
+    "values": [
+      {
+        "title": "Quality",
+        "description": "We source and provide top-grade products for long-lasting satisfaction.",
+        "icon": "Award"
+      },
+      {
+        "title": "Customer Satisfaction",
+        "description": "Our highest priority is ensuring every customer order and inquiry is fulfilled seamlessly.",
+        "icon": "Smile"
+      },
+      {
+        "title": "Integrity",
+        "description": "Honest pricing, clear product information, and dependable service in all transactions.",
+        "icon": "ShieldCheck"
+      },
+      {
+        "title": "Reliability",
+        "description": "Dependable supply chain and consistent communication for individual and business clients.",
+        "icon": "Clock"
+      },
+      {
+        "title": "Innovation",
+        "description": "Continuously expanding our product catalog and modernizing product discovery.",
+        "icon": "Sparkles"
+      },
+      {
+        "title": "Convenience",
+        "description": "Effortless product inquiries, quick Telegram updates, and direct delivery support.",
+        "icon": "ShoppingBag"
+      }
+    ],
+    "socialLinks": {
+      "telegram": "https://t.me/mercyshopes",
+      "whatsapp": "https://wa.me/251965449976",
+      "facebook": "https://facebook.com/mercyshopes",
+      "instagram": "https://instagram.com/mercyshopes"
+    },
+    "telegramBotToken": "",
+    "telegramChatId": "",
+    "businessHours": "Monday - Saturday: 8:00 AM - 7:00 PM | Sunday: Closed",
+    "heroHeadline": "Quality Materials, Cosmetics & Everyday Products in One Place",
+    "heroSubheadline": "Mercy Shopes provides quality products and materials for individuals, businesses, homes, beauty needs, and everyday use. Discover our products, explore our services, and send us an inquiry for the products you need.",
+    "heroBannerImage": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&auto=format&fit=crop&q=80"
+  },
+  "adminPasswords": {
+    "admin-01": "35f6c689951b74cbe4567e58de621f2e8bff729637ea82c3dcd619f0e03cd805924dcca8f9032e39f710c7a768d81a605c8c12c2042c9089700a2f4ab081ca9a"
+  }
+}
