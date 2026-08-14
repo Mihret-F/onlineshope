@@ -10,7 +10,9 @@ export const app = express();
 const PORT = 3000;
 
 // Static Uploads Directory
-const uploadsDir = path.join(process.cwd(), 'public', 'uploads');
+const uploadsDir = process.env.VERCEL
+  ? path.join('/tmp', 'public', 'uploads')
+  : path.join(process.cwd(), 'public', 'uploads');
 if (!fs.existsSync(uploadsDir)) {
   fs.mkdirSync(uploadsDir, { recursive: true });
 }
