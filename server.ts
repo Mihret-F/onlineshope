@@ -502,7 +502,7 @@ app.use(express.urlencoded({ extended: true, limit: '20mb' }));
   });
 
   // --- Vite Dev or Production Static Serving ---
-  if (process.env.NODE_ENV !== 'production') {
+  if (process.env.NODE_ENV !== 'production' && process.env.VERCEL !== '1') {
     createViteServer({
       server: { middlewareMode: true },
       appType: 'spa'
