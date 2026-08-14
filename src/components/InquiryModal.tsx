@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Send, Package, User, Phone, Send as TelegramIcon, Mail, MapPin, Hash, AlertCircle, Loader2 } from 'lucide-react';
+import { X, Send, Package, User, Phone, Send as TelegramIcon, Mail, MapPin, Hash, AlertCircle, Loader2, Calendar } from 'lucide-react';
 import { Product, Inquiry } from '../types';
 import { api } from '../services/api';
 
@@ -29,7 +29,8 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
     preferredContact: 'Phone',
     message: selectedProduct ? `I would like to inquire about ${selectedProduct.name}. Please provide availability and quote.` : '',
     additionalRequirements: '',
-    attachment: ''
+    attachment: '',
+    deliveryDate: ''
   });
 
   const [loading, setLoading] = useState(false);
@@ -112,7 +113,8 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
         preferredContact: formData.preferredContact,
         message: formData.message,
         additionalRequirements: formData.additionalRequirements,
-        attachment: formData.attachment
+        attachment: formData.attachment,
+        deliveryDate: formData.deliveryDate || undefined
       });
 
       setLoading(false);
@@ -313,6 +315,22 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                   className="w-full pl-9 pr-3.5 py-2.5 bg-stone-50 border border-stone-200 rounded-xl text-xs font-medium text-stone-900 focus:outline-none focus:ring-2 focus:ring-emerald-600"
                 />
               </div>
+            </div>
+          </div>
+
+          {/* Delivery Date */}
+          <div>
+            <label className="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-1">
+              Desired Delivery Date
+            </label>
+            <div className="relative">
+              <Calendar className="w-4 h-4 absolute left-3 top-3 text-stone-400" />
+              <input
+                type="date"
+                value={formData.deliveryDate}
+                onChange={e => setFormData({ ...formData, deliveryDate: e.target.value })}
+                className="w-full pl-9 pr-3.5 py-2.5 bg-stone-50 border border-stone-200 rounded-xl text-xs font-medium text-stone-900 focus:outline-none focus:ring-2 focus:ring-emerald-600"
+              />
             </div>
           </div>
 

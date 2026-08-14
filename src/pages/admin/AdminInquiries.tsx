@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Send, CheckCircle2, Clock, AlertCircle, RefreshCw, Trash2, Search, ExternalLink, Filter } from 'lucide-react';
+import { Send, CheckCircle2, Clock, AlertCircle, RefreshCw, Trash2, Search, ExternalLink, Filter, Calendar } from 'lucide-react';
 import { Inquiry } from '../../types';
 import { api } from '../../services/api';
 
@@ -133,6 +133,7 @@ export const AdminInquiries: React.FC = () => {
                   <th className="p-4">Customer</th>
                   <th className="p-4">Product / Item</th>
                   <th className="p-4">Qty</th>
+                  <th className="p-4">Delivery Date</th>
                   <th className="p-4">Contact</th>
                   <th className="p-4">Status</th>
                   <th className="p-4 text-right">Actions</th>
@@ -159,6 +160,16 @@ export const AdminInquiries: React.FC = () => {
                       </td>
                       <td className="p-4 font-bold text-stone-900">
                         {inq.quantity}
+                      </td>
+                      <td className="p-4">
+                        {inq.deliveryDate ? (
+                          <div className="flex items-center gap-2 text-stone-700 font-medium">
+                            <Calendar className="w-3.5 h-3.5 text-emerald-600" />
+                            <span>{new Date(inq.deliveryDate).toLocaleDateString()}</span>
+                          </div>
+                        ) : (
+                          <span className="text-stone-400 text-[11px]">—</span>
+                        )}
                       </td>
                       <td className="p-4 space-y-1">
                         <a href={`tel:${inq.phone}`} className="block text-emerald-800 font-bold hover:underline">

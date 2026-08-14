@@ -60,32 +60,6 @@
   ],
   "products": [
     {
-      "name": "cosmoo",
-      "sku": "MS-PRD-465",
-      "categoryId": "cat-other",
-      "brand": "nercyyy",
-      "shortDescription": "hi all",
-      "description": "",
-      "price": 1000,
-      "discountPrice": 1,
-      "stock": 20,
-      "availability": "Available",
-      "featured": false,
-      "isNew": true,
-      "badge": "",
-      "images": [
-        "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&auto=format&fit=crop&q=80"
-      ],
-      "specifications": {},
-      "sizes": [],
-      "colors": [],
-      "tags": [],
-      "id": "prod-1786611916941",
-      "categoryName": "Other Products",
-      "createdAt": "2026-08-13T09:05:16.941Z",
-      "updatedAt": "2026-08-13T09:05:16.941Z"
-    },
-    {
       "id": "prod-001",
       "name": "Hydrating Botanical Facial Serum 50ml",
       "sku": "MS-COS-001",
@@ -423,69 +397,74 @@
       "updatedAt": "2026-08-13T10:18:26.959Z"
     }
   ],
-  "inquiries": [
-    {
-      "customerName": "tufyrj",
-      "phone": "+251 987876543",
-      "telegramUsername": "@mercyyy",
-      "email": "mihretfikre67@gmail.com",
-      "productId": "prod-001",
-      "productName": "Hydrating Botanical Facial Serum 50ml",
-      "productCategory": "Cosmetics",
-      "quantity": 1,
-      "location": "Addis Ababa",
-      "preferredContact": "Phone",
-      "message": "I would like to inquire about Hydrating Botanical Facial Serum 50ml. Please provide availability and quote.",
-      "additionalRequirements": "",
-      "attachment": "",
-      "id": "inq-1786616378695",
-      "inquiryNumber": "#MS-000003",
-      "status": "New",
-      "createdAt": "2026-08-13T10:19:38.695Z",
-      "updatedAt": "2026-08-13T10:19:38.695Z"
-    },
-    {
-      "customerName": "hgc",
-      "phone": "+251 987654322",
-      "telegramUsername": "nbhj",
-      "email": "mihretfikre67@gmail.com",
-      "productId": "prod-004",
-      "productName": "Premium Polished Porcelain Floor Tiles (60x60 cm)",
-      "productCategory": "Materials",
-      "quantity": 1,
-      "location": "Addis Ababa",
-      "preferredContact": "Email",
-      "message": "I would like to inquire about Premium Polished Porcelain Floor Tiles (60x60 cm). Please provide availability and quote.",
-      "additionalRequirements": "",
-      "attachment": "",
-      "id": "inq-1786611730620",
-      "inquiryNumber": "#MS-000002",
-      "status": "New",
-      "createdAt": "2026-08-13T09:02:10.620Z",
-      "updatedAt": "2026-08-13T09:02:10.620Z"
-    },
-    {
-      "customerName": "mihret",
-      "phone": "+251 965449976",
-      "telegramUsername": "@meryy",
-      "email": "mihretfikre67@gmail.com",
-      "productId": "prod-004",
-      "productName": "Premium Polished Porcelain Floor Tiles (60x60 cm)",
-      "productCategory": "Materials",
-      "quantity": 111,
-      "location": "Addis Ababa",
-      "preferredContact": "Telegram",
-      "message": "I would like to inquire about Premium Polished Porcelain Floor Tiles (60x60 cm). Please provide availability and quote.",
-      "additionalRequirements": "fnakej",
-      "attachment": "",
-      "id": "inq-1786611686513",
-      "inquiryNumber": "#MS-000001",
-      "status": "New",
-      "createdAt": "2026-08-13T09:01:26.513Z",
-      "updatedAt": "2026-08-13T09:01:26.513Z"
-    }
-  ],
+  "inquiries": [],
   "customers": [
+    {
+      "id": "cust-1786689516314",
+      "fullName": "dfgh",
+      "phone": "+251 98765",
+      "telegramUsername": "fgh",
+      "email": "mihretfikre555@gmail.com",
+      "location": "Addis Ababa",
+      "totalInquiries": 1,
+      "lastInquiryDate": "2026-08-14T06:38:36.314Z",
+      "createdAt": "2026-08-14T06:38:36.314Z"
+    },
+    {
+      "id": "cust-1786689491205",
+      "fullName": "sdfgh",
+      "phone": "+251 9876542345",
+      "telegramUsername": "gh",
+      "email": "mihretfikre@gmail.com",
+      "location": "Addis Ababa",
+      "totalInquiries": 1,
+      "lastInquiryDate": "2026-08-14T06:38:11.204Z",
+      "createdAt": "2026-08-14T06:38:11.204Z"
+    },
+    {
+      "id": "cust-1786689459500",
+      "fullName": "jhbhk",
+      "phone": "+251 987654",
+      "telegramUsername": "jkhj",
+      "email": "mihretfikre7777@gmail.com",
+      "location": "Addis Ababa",
+      "totalInquiries": 1,
+      "lastInquiryDate": "2026-08-14T06:37:39.500Z",
+      "createdAt": "2026-08-14T06:37:39.500Z"
+    },
+    {
+      "id": "cust-1786689415674",
+      "fullName": "bkj",
+      "phone": "+2519876543 ",
+      "telegramUsername": "bnjj",
+      "email": "mihretfikre68888@gmail.com",
+      "location": "Addis Ababa",
+      "totalInquiries": 1,
+      "lastInquiryDate": "2026-08-14T06:36:55.674Z",
+      "createdAt": "2026-08-14T06:36:55.674Z"
+    },
+    {
+      "id": "cust-1786689367905",
+      "fullName": "vjgvh",
+      "phone": "+251 98765432",
+      "telegramUsername": "hvh",
+      "email": "mihretfikre99@gmail.com",
+      "location": "Addis Ababa",
+      "totalInquiries": 1,
+      "lastInquiryDate": "2026-08-14T06:36:07.905Z",
+      "createdAt": "2026-08-14T06:36:07.905Z"
+    },
+    {
+      "id": "cust-1786689175026",
+      "fullName": "zdsxfhcgkbj",
+      "phone": "+251 9876543",
+      "telegramUsername": "fvhb",
+      "email": "fcfgv@fghbj",
+      "location": "Addis Ababa",
+      "totalInquiries": 3,
+      "lastInquiryDate": "2026-08-14T07:12:13.595Z",
+      "createdAt": "2026-08-14T06:32:55.025Z"
+    },
     {
       "id": "cust-1786611686513",
       "fullName": "tufyrj",
@@ -644,7 +623,28 @@
       "status": "active"
     }
   ],
-  "messages": [],
+  "messages": [
+    {
+      "name": "Mihret Fikre",
+      "phone": "+251965449976",
+      "email": "mihretfikre2299@gmail.com",
+      "subject": "General Question",
+      "message": "bjhlh",
+      "id": "msg-1786689296209",
+      "status": "unread",
+      "createdAt": "2026-08-14T06:34:56.209Z"
+    },
+    {
+      "name": "Mihret Fikre",
+      "phone": "+251965449976",
+      "email": "mihretfikre67@gmail.com",
+      "subject": "General Question",
+      "message": "bkhkjn",
+      "id": "msg-1786688838060",
+      "status": "unread",
+      "createdAt": "2026-08-14T06:27:18.060Z"
+    }
+  ],
   "siteSettings": {
     "companyName": "Mercy Shopes",
     "logo": "/logo.png",

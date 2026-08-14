@@ -56,6 +56,7 @@ export interface Inquiry {
   preferredContact?: string;
   additionalRequirements?: string;
   attachment?: string;
+  deliveryDate?: string;
   status: 'New' | 'Contacted' | 'Processing' | 'Completed' | 'Cancelled';
   adminNotes?: string;
   createdAt: string;

@@ -8,8 +8,8 @@ interface AdminLoginProps {
 }
 
 export const AdminLogin: React.FC<AdminLoginProps> = ({ onLoginSuccess }) => {
-  const [email, setEmail] = useState('admin@mercyshopes.com');
-  const [password, setPassword] = useState('admin123');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -90,11 +90,7 @@ export const AdminLogin: React.FC<AdminLoginProps> = ({ onLoginSuccess }) => {
             </div>
           </div>
 
-          <div className="p-3 bg-emerald-50 rounded-xl border border-emerald-100 text-[11px] text-emerald-900">
-            <p><strong>Default Login Credentials:</strong></p>
-            <p>Email: <code className="font-bold">admin@mercyshopes.com</code></p>
-            <p>Password: <code className="font-bold">admin123</code></p>
-          </div>
+        
 
           <button
             type="submit"

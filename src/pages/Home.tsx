@@ -1,5 +1,5 @@
-import React from 'react';
-import { Send, ShoppingBag, PhoneCall, ArrowRight, Award, HeartHandshake, CheckCircle2 } from 'lucide-react';
+import React, { useState } from 'react';
+import { Send, ShoppingBag, PhoneCall, ArrowRight, Award, HeartHandshake, CheckCircle2, X } from 'lucide-react';
 import { SiteSettings, Category, Product, ServiceItem } from '../types';
 import { ProductCard } from '../components/ProductCard';
 
@@ -22,6 +22,14 @@ export const Home: React.FC<HomeProps> = ({
   onRequestInquiry,
   onViewProductDetails
 }) => {
+  const [selectedCategoryId, setSelectedCategoryId] = useState<string | null>(null);
+  
+  // Get products for selected category
+  const selectedCategory = categories.find(c => c.id === selectedCategoryId);
+  const categoryProducts = selectedCategory 
+    ? featuredProducts.filter(p => p.categoryId === selectedCategoryId)
+    : [];
+
   return (
     <div className="space-y-16 pb-16 font-sans text-slate-800">
       
@@ -87,7 +95,7 @@ export const Home: React.FC<HomeProps> = ({
               <div className="relative mx-auto max-w-md lg:max-w-none">
                 <div className="aspect-[4/3] rounded-sm overflow-hidden border border-slate-700 bg-slate-800 relative group">
                   <img
-                    src={settings.heroBannerImage}
+                    src={settings.logo12 || '/logo12.png'}
                     alt="Mercy Shopes Products Showcase"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -179,8 +187,8 @@ export const Home: React.FC<HomeProps> = ({
           {categories.map(cat => (
             <div
               key={cat.id}
-              onClick={() => onNavigate(`/products?category=${cat.id}`)}
-              className="group relative rounded-sm overflow-hidden aspect-[4/3] cursor-pointer border border-slate-200"
+              onClick={() => setSelectedCategoryId(cat.id)}
+              className="group relative rounded-sm overflow-hidden aspect-[4/3] cursor-pointer border border-slate-200 hover:border-teal-400 transition-colors"
             >
               <img
                 src={cat.image || 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&auto=format&fit=crop&q=80'}
@@ -207,12 +215,62 @@ export const Home: React.FC<HomeProps> = ({
         </div>
       </section>
 
-      {/* 4. FEATURED PRODUCTS SHOWCASE */}
+      {/* CATEGORY PRODUCTS SHOWCASE - Shows when category is selected */}
+      {selectedCategoryId && selectedCategory && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-teal-50 p-8 rounded-sm border border-teal-200">
+          <div className="flex items-center justify-between mb-8 gap-4">
+            <div>
+              <h2 className="text-2xl font-extrabold text-teal-900 uppercase tracking-tight">
+                {selectedCategory.name}
+              </h2>
+              <p className="text-sm text-teal-700 mt-1">{selectedCategory.description}</p>
+            </div>
+            <button
+              onClick={() => setSelectedCategoryId(null)}
+              className="p-2 hover:bg-teal-100 rounded-sm transition-colors"
+              title="Close category view"
+            >
+              <X className="w-6 h-6 text-teal-900" />
+            </button>
+          </div>
+
+          {categoryProducts.length > 0 ? (
+            <div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {categoryProducts.map(product => (
+                  <ProductCard
+                    key={product.id}
+                    product={product}
+                    onViewDetails={onViewProductDetails}
+                    onRequestInquiry={onRequestInquiry}
+                  />
+                ))}
+              </div>
+              <div className="mt-8 flex gap-3 justify-center">
+                <button
+                  onClick={() => onNavigate(`/products?category=${selectedCategoryId}`)}
+                  className="flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-bold px-6 py-3 rounded-sm text-xs uppercase tracking-wider transition-all"
+                >
+                  <ShoppingBag className="w-4 h-4" />
+                  <span>View All in {selectedCategory.name}</span>
+                </button>
+              </div>
+            </div>
+          ) : (
+            <div className="text-center py-8">
+              <ShoppingBag className="w-12 h-12 text-teal-300 mx-auto mb-3" />
+              <p className="text-teal-700 font-semibold">No products available in this category yet.</p>
+            </div>
+          )}
+        </section>
+      )}
+
+      {/* 5. FEATURED PRODUCTS SHOWCASE */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4 border-b border-slate-100 pb-4">
           <div>
             <span className="text-[10px] font-bold uppercase tracking-widest text-teal-600">
-              02 / Featured
+              03 / Featured
             </span>
             <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1 uppercase tracking-tight">
               Featured Merchandise
@@ -239,12 +297,12 @@ export const Home: React.FC<HomeProps> = ({
         </div>
       </section>
 
-      {/* 5. SERVICES OVERVIEW */}
+      {/* 6. SERVICES OVERVIEW */}
       <section className="bg-slate-50 py-16 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           <div className="text-center max-w-2xl mx-auto space-y-1">
             <span className="text-[10px] font-bold uppercase tracking-widest text-teal-600">
-              03 / Services
+              04 / Services
             </span>
             <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 uppercase tracking-tight">
               Our Value Added Services
@@ -275,7 +333,7 @@ export const Home: React.FC<HomeProps> = ({
         </div>
       </section>
 
-      {/* 6. CALL TO ACTION / INQUIRY BANNER */}
+      {/* 7. CALL TO ACTION / INQUIRY BANNER */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-slate-900 rounded-sm p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-8 border border-slate-800">
           <div className="space-y-3 max-w-2xl text-center md:text-left">

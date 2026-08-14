@@ -649,9 +649,7 @@ class Store {
               ...((parsed.siteSettings && parsed.siteSettings.socialLinks) || {})
             }
           },
-          adminPasswords: parsed.adminPasswords || {
-            'admin-01': hashPassword('admin123')
-          }
+          adminPasswords: parsed.adminPasswords || {}
         };
 
         this.saveData(data);
@@ -672,9 +670,7 @@ class Store {
       services: DEFAULT_SERVICES,
       messages: [],
       siteSettings: DEFAULT_SETTINGS,
-      adminPasswords: {
-        'admin-01': hashPassword('admin123')
-      }
+      adminPasswords: {}
     };
 
     this.saveData(initialData);
