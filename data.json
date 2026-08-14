@@ -8,6 +8,9 @@
       "createdAt": "2026-08-13T08:56:08.514Z"
     }
   ],
+  "adminPasswords": {
+    "admin-01": "b3201585dddf89d0868d9e0eb8e00f3b221a8382a994738bcb4e9d1031691e075db4b4f8112b8651288ff1e1eaab866c2a79a01516810ccd9148c8fa17a043c1"
+  },
   "categories": [
     {
       "id": "cat-materials",
