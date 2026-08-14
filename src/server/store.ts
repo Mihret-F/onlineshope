@@ -654,6 +654,11 @@ class Store {
           adminPasswords: parsed.adminPasswords || {}
         };
 
+        const seededAdmin = data.adminUsers.find(u => u.email.toLowerCase() === DEFAULT_ADMIN.email.toLowerCase()) || data.adminUsers[0];
+        if (seededAdmin && !data.adminPasswords[seededAdmin.id]) {
+          data.adminPasswords[seededAdmin.id] = hashPassword('mercyadmin2026');
+        }
+
         this.saveData(data);
         return data;
       }
@@ -672,7 +677,9 @@ class Store {
       services: DEFAULT_SERVICES,
       messages: [],
       siteSettings: DEFAULT_SETTINGS,
-      adminPasswords: {}
+      adminPasswords: {
+        [DEFAULT_ADMIN.id]: hashPassword('mercyadmin2026')
+      }
     };
 
     this.saveData(initialData);
