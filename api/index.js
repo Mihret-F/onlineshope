@@ -1,6 +1,5 @@
-// Import the built Express app from the compiled server
-const serverModule = require('../dist/server.cjs');
-const app = serverModule.app || serverModule.default;
+import serverModule from '../dist/server.cjs';
 
-// Export as Vercel handler
-module.exports = app || serverModule;
+const app = serverModule?.app ?? serverModule?.default ?? serverModule;
+
+export default app;

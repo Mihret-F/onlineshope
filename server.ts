@@ -2,7 +2,6 @@ import 'dotenv/config';
 import express, { Request, Response, NextFunction } from 'express';
 import path from 'path';
 import fs from 'fs';
-import { createServer as createViteServer } from 'vite';
 import { store } from './src/server/store.js';
 import { sendTelegramInquiryNotification, sendTestTelegramNotification } from './src/server/telegram.js';
 import { Inquiry } from './src/types.js';
@@ -503,11 +502,13 @@ app.use(express.urlencoded({ extended: true, limit: '20mb' }));
 
   // --- Vite Dev or Production Static Serving ---
   if (process.env.NODE_ENV !== 'production' && process.env.VERCEL !== '1') {
-    createViteServer({
-      server: { middlewareMode: true },
-      appType: 'spa'
-    }).then((vite) => {
-      app.use(vite.middlewares);
+    import('vite').then(({ createServer: createViteServer }) => {
+      createViteServer({
+        server: { middlewareMode: true },
+        appType: 'spa'
+      }).then((vite) => {
+        app.use(vite.middlewares);
+      });
     });
   } else {
     const distPath = path.join(process.cwd(), 'dist');
