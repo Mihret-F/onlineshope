@@ -28,7 +28,20 @@ interface DBData {
   adminPasswords: Record<string, string>; // userId -> hashedPassword
 }
 
-const DB_FILE = path.join(process.cwd(), 'data.json');
+// Try multiple paths for data.json (handles both local dev and Vercel deployment)
+const possiblePaths = [
+  path.join(process.cwd(), 'data.json'),  // Local dev & Vercel root
+  path.join(__dirname, '../..', 'data.json'),  // Relative from built server
+  path.join(__dirname, '../../../data.json')  // Fallback
+];
+
+let DB_FILE = possiblePaths[0];
+for (const filePath of possiblePaths) {
+  if (fs.existsSync(filePath)) {
+    DB_FILE = filePath;
+    break;
+  }
+}
 
 // Default password helper using PBKDF2
 export function hashPassword(password: string): string {
